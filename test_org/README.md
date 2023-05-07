@@ -1,5 +1,4 @@
-# Training Code for IEIT: Blind Image Quality Assessment for Authentic Distortions by Intermediary Enhancement and Iterative Training
-This is the simplified training example of VT-IQA on the KonIQ-10k dataset. The trainning process is the same for other datasets:
+# Test code for VT-IQA: Blind Image Quality Index for Authentic Distortions With Local and Global Deep Feature Aggregation
 
 ## 1. Data preparation
 
@@ -14,15 +13,16 @@ This is the simplified training example of VT-IQA on the KonIQ-10k dataset. The 
 ## If you like this work, please cite:
 
 {
-  author={Song, Tianshu and Li, Leida and Chen, Pengfei and Liu, Hantao and Qian, Jiansheng},  
+   author={Li, Leida and Song, Tianshu and Wu, Jinjian and Dong, Weisheng and Qian, Jiansheng and Shi, Guangming},  
   journal={IEEE Transactions on Circuits and Systems for Video Technology},   
-  title={Blind Image Quality Assessment for Authentic Distortions by Intermediary Enhancement and Iterative Training},   
+  title={Blind Image Quality Index for Authentic Distortions With Local and Global Deep Feature Aggregation},   
   year={2022},  
   volume={32},  
-  number={11},  
-  pages={7592-7604},  
-  doi={10.1109/TCSVT.2022.3179744}   
+  number={12},  
+  pages={8512-8523},  
+  doi={10.1109/TCSVT.2021.3112197}   
 }
+
 
 
 
