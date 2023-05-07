@@ -62,15 +62,15 @@ def test(model, test_loader, epoch, device, all_test_loss):
             # sz=max(data2.shape[2],data2.shape[3])
             # nm=round(nm*1024/sz)
             patch_sz = int(224 / nm)
-            scale1 = int(data2.shape[3] / (nm+4))
-            scale2 = int(data2.shape[2] /  (nm+4))
+            scale1 = int(data2.shape[3] / nm)
+            scale2 = int(data2.shape[2] / nm)
 
             rd_ps1 = int(scale1 / 2 - patch_sz / 2)
             rd_ps2 = int(scale2 / 2 - patch_sz / 2)
 
             for i in range(nm):
                 for j in range(nm):
-                    data_pt[:, :, i * patch_sz:i * patch_sz + patch_sz, j * patch_sz:j * patch_sz + patch_sz] = data2[:, :,(i +2)* scale2 + rd_ps2:(i +2) * scale2 + rd_ps2 + patch_sz, (j +2) * scale1 + rd_ps1: (j+2) * scale1 + rd_ps1 + patch_sz]
+                    data_pt[:, :, i * patch_sz:i * patch_sz + patch_sz, j * patch_sz:j * patch_sz + patch_sz] = data2[:, :,i * scale2 + rd_ps2:i * scale2 + rd_ps2 + patch_sz,j * scale1 + rd_ps1: j * scale1 + rd_ps1 + patch_sz]
             # plt.imshow(data_pt[0].cpu().numpy().transpose(1, 2, 0))
             data_pt = data_pt.float()
             data_pt /= 255
