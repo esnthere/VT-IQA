@@ -14,7 +14,7 @@ This is the simplified  version of published paper  [VT-IQA](https://ieeexplore.
 ### 2. Load pre-trained weight for test  
    The models pre-trained on KonIQ-10k, SPAQ, LIVEW, RBID, CID2013 are released. The dataset are randomly splitted several times during training, and each released model is obtained from one split. The model file '**my_vision_transformer.py**' is modified from open accessed source code of [DEIT](https://github.com/facebookresearch/deit) and [TIMM](https://github.com/huggingface/pytorch-image-models/tree/main/timm). 
    
-   The pre-trained models can be downloaded from: [Pre-trained models](https://pan.baidu.com/s/1IoGWFXKSi-ljYaWB6mOeaw?pwd=f4wv ). Please download these files and put them in the same folder of code and then run '**test_example_of_*dataset*.py**' to test models trained on the *dataset*. You can make both cross-dataset and intra-dataset of the model trained on KonIQ-10k.
+   The pre-trained models can be downloaded from: [Pre-trained models](https://pan.baidu.com/s/1DGsGBpyTUKPONNwpkxYyWA?pwd=h7ro). Please download these files and put them in the same folder of code and then run '**test_example_of_*dataset*.py**' to test models trained on the *dataset*. You can make both cross-dataset and intra-dataset of the model trained on KonIQ-10k.
    
    
 ## For train:  
