@@ -1,14 +1,12 @@
 # Test code for VT-IQA: Blind Image Quality Index for Authentic Distortions With Local and Global Deep Feature Aggregation
 
-## 1. Data preparation
-
-   To ensure high speed, save training images and lables, enhanced images, probability for image selection into 'mat/npz' files. Please run '**data_preparation_example_for_koniq.py**' to save the training images and labels, and other necessary files can be downloaded from [Trainng files](https://pan.baidu.com/s/14KLIdtwTvmqQvppUv181Vw?pwd=27z7). Please download these files and put them into the same folder of the training code.
+## 1. Data preparation  
+   To ensure high speed, save images and lables of each dataset with 'mat/npz' files. Only need to run '**data_preparation_example.py**' once for each dataset. 
    
-## 2. Training the model
-
-   Please run '**training_example_of_koniq.py**' to performe the training process.    
-   The training example of the first and second stage can be seen from '**run training_example_of_koniq.ipynb**'(part results).  
-   The pre-trained weight and model file '**my_vision_transformer.py**' is modified from open accessed source code of [DEIT](https://github.com/facebookresearch/deit) and [TIMM](https://github.com/huggingface/pytorch-image-models/tree/main/timm). 
+## 2. Load pre-trained weight for test  
+   The model pre-trained on KonIQ-10k is released. The dataset are randomly splitted several times during training, and the released model is obtained from the first split. The model file '**my_vision_transformer2.py**' '**my_safusion2.py**' is modified from open accessed source code of [DEIT](https://github.com/facebookresearch/deit) and [TIMM](https://github.com/huggingface/pytorch-image-models/tree/main/timm). 
+   
+   The pre-trained models can be downloaded from: [Pre-trained models](https://pan.baidu.com/s/1_5YWkppd7bASY7dnIGCdrg?pwd=sz1p). Please download these files and put them in the same folder of code and then run '**test_example_of_koniq_org.py**' to make both cross-dataset and intra-dataset.
 
 ## If you like this work, please cite:
 
